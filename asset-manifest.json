@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/25-Night-Code-Info/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/25-Night-Code-Info/static/js/main.ab155757.chunk.js",
+    "main.js.map": "/25-Night-Code-Info/static/js/main.ab155757.chunk.js.map",
+    "runtime-main.js": "/25-Night-Code-Info/static/js/runtime-main.720f4788.js",
+    "runtime-main.js.map": "/25-Night-Code-Info/static/js/runtime-main.720f4788.js.map",
+    "static/js/2.8b818364.chunk.js": "/25-Night-Code-Info/static/js/2.8b818364.chunk.js",
+    "static/js/2.8b818364.chunk.js.map": "/25-Night-Code-Info/static/js/2.8b818364.chunk.js.map",
+    "static/js/3.ae2cb922.chunk.js": "/25-Night-Code-Info/static/js/3.ae2cb922.chunk.js",
+    "static/js/3.ae2cb922.chunk.js.map": "/25-Night-Code-Info/static/js/3.ae2cb922.chunk.js.map",
+    "index.html": "/25-Night-Code-Info/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/25-Night-Code-Info/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.8b818364.chunk.js.LICENSE.txt": "/25-Night-Code-Info/static/js/2.8b818364.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/25-Night-Code-Info/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.720f4788.js",
+    "static/js/2.8b818364.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.ab155757.chunk.js"
+  ]
+}
