@@ -1,8 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import MuiAlert from '@material-ui/lab/Alert';
 import Typography from '@material-ui/core/Typography';
+import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+import Divider from '@material-ui/core/Divider';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import MailIcon from '@material-ui/icons/Mail';
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -34,6 +37,26 @@ function Home() {
         alt="banner"
         style={{ width: "100%"}}
       />
+      <Divider />
+      <Grid container spacing={2}>
+        <Grid item>
+          <a
+            href="https://github.com/SolidifiedRay/25-Night-Code-Info"
+            target="_blank"
+          >
+            <GitHubIcon fontSize="small" /> 源码
+          </a>
+        </Grid>
+        <Grid item></Grid>
+        <Grid item>
+          <a
+            href="https://weibo.com/6209419972/profile?topnav=1&wvr=6"
+            target="_blank"
+          >
+            <MailIcon fontSize="small" /> 联系我（微博）
+          </a>
+        </Grid>
+      </Grid>
       <br/><br/>
     </div>
   );
