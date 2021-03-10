@@ -1,6 +1,5 @@
 import React from "react";
 import MuiAlert from '@material-ui/lab/Alert';
-import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 import Divider from '@material-ui/core/Divider';
@@ -27,9 +26,7 @@ function Home() {
        {/* FIXME: a place holder */}
       <br/><br/><br/><br/>
       <Alert severity="info">
-        <Typography variant="h6">
-          看到这个关系图了吗，全都可以嗑！
-        </Typography>
+          看到这个关系图了吗，全都可以嗑
       </Alert>
       <br/>
       <img
