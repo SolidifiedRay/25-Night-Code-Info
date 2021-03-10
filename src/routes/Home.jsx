@@ -1,10 +1,12 @@
 import React from "react";
 import MuiAlert from '@material-ui/lab/Alert';
-import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
+/*
+import Grid from '@material-ui/core/Grid';
 import Divider from '@material-ui/core/Divider';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import MailIcon from '@material-ui/icons/Mail';
+*/
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
@@ -34,6 +36,7 @@ function Home() {
         alt="banner"
         style={{ width: "100%"}}
       />
+      {/*
       <Divider />
       <Grid container spacing={2}>
         <Grid item>
@@ -54,6 +57,7 @@ function Home() {
           </a>
         </Grid>
       </Grid>
+      */}
       <br/><br/>
     </div>
   );
