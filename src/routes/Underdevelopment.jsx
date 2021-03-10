@@ -8,7 +8,7 @@ function Alert(props) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '80%',
+    width: '100%',
     '& > * + *': {
       marginTop: theme.spacing(2),
     },
@@ -20,8 +20,6 @@ function Underdevelopment() {
 
   return (
     <div className={classes.root}>
-       {/* FIXME: a place holder */}
-       <br/><br/><br/><br/>
       <Alert severity="error">你来到了什么也没有的sekai（在做了在做了</Alert>
     </div>
   );

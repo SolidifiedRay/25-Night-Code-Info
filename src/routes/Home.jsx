@@ -14,7 +14,7 @@ function Alert(props) {
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: '80%',
+    width: '100%',
     '& > * + *': {
       marginTop: theme.spacing(2),
     },
@@ -25,8 +25,6 @@ function Home() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-       {/* FIXME: a place holder */}
-      <br/><br/><br/><br/>
       <Alert severity="info">
           看到这个关系图了吗，全都可以嗑
       </Alert>
