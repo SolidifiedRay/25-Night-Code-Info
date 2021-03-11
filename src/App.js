@@ -29,6 +29,7 @@ import Underdevelopment from './routes/Underdevelopment';
 import Home from './routes/Home';
 import CardsList from './routes/CardsList';
 import EventsList from './routes/EventsList';
+import MainStory from './routes/MainStory';
 
 const drawerWidth = 240;
 
@@ -100,7 +101,7 @@ function App(props) {
     {
       text: "主线剧情",
       icon: <MenuBookIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push("/mainstory")
     },
     {
       text: "活动剧情",
@@ -242,6 +243,7 @@ function App(props) {
         <div className={classes.toolbar} />
         <Route exact path="/" component={Home} />
         <Route path="/underdevelopment" component={Underdevelopment} />
+        <Route path="/mainstory" component={MainStory} />
         <Route path="/cardslist" component={CardsList} />
         <Route path="/eventslist" component={EventsList} />
       </main>
