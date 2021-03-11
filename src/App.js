@@ -27,6 +27,7 @@ import LiveTvIcon from '@material-ui/icons/LiveTv';
 
 import Underdevelopment from './routes/Underdevelopment';
 import Home from './routes/Home';
+import CardsList from './routes/CardsList';
 
 const drawerWidth = 240;
 
@@ -108,7 +109,7 @@ function App(props) {
     {
       text: "卡面剧情",
       icon: <LocalLibraryIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push("/cardslist")
     }
   ]
 
@@ -240,6 +241,7 @@ function App(props) {
         <div className={classes.toolbar} />
         <Route exact path="/" component={Home} />
         <Route path="/underdevelopment" component={Underdevelopment} />
+        <Route path="/cardslist" component={CardsList} />
       </main>
     </div>
   );
