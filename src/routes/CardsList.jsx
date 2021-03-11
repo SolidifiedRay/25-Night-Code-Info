@@ -75,7 +75,7 @@ function CardsList() {
       id: 'mzk4001',
       path: 'mzk/4001.png',
       title: '屋上のフレンドシップ',
-      subtitle: '晓山瑞希 - 走れ！体育祭！～実行委員は大忙し～（4星) ',
+      subtitle: '晓山瑞希 - KAMIKOU FESTIVAL!（4星) ',
       prelink: 'https://www.bilibili.com/video/BV1fv4y1o7cn',
       postlink: 'https://www.bilibili.com/video/BV1fv4y1o7cn?p=2'
     },
