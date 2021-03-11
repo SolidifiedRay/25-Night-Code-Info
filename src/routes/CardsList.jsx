@@ -204,7 +204,7 @@ function CardsList() {
   return (
     <div className={classes.root}>
       <Alert severity="info">
-        感谢所有汉化的老师！看完记得一键3连支持一下！如果没有卡面就是目前还没有汉化，若有遗漏欢迎补充！
+        感谢所有汉化的老师！看完记得3连支持一下！如果没有卡面就是目前还没有汉化，若有遗漏欢迎补充！
       </Alert>
       <Grid
         container
