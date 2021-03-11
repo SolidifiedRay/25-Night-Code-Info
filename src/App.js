@@ -34,6 +34,7 @@ import Home from './routes/Home';
 import CardsList from './routes/CardsList';
 import EventsList from './routes/EventsList';
 import MainStory from './routes/MainStory';
+import Radio from './routes/Radio';
 
 const drawerWidth = 240;
 
@@ -146,7 +147,7 @@ function App(props) {
     {
       text: "电台节目",
       icon: <RadioIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push("/radio")
     },
     {
       text: "官方延伸",
@@ -280,6 +281,7 @@ function App(props) {
         <Route path="/mainstory" component={MainStory} />
         <Route path="/cardslist" component={CardsList} />
         <Route path="/eventslist" component={EventsList} />
+        <Route path="/radio" component={Radio} />
       </main>
     </div>
   );
