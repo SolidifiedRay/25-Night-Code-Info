@@ -35,6 +35,7 @@ import CardsList from './routes/CardsList';
 import EventsList from './routes/EventsList';
 import MainStory from './routes/MainStory';
 import Radio from './routes/Radio';
+import SeiyuEvent from './routes/SeiyuEvent';
 
 const drawerWidth = 240;
 
@@ -150,9 +151,9 @@ function App(props) {
       onClick: () => history.push("/radio")
     },
     {
-      text: "官方延伸",
+      text: "其他节目",
       icon: <LanguageIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push("/seiyuevent")
     }
   ]
 
@@ -282,6 +283,7 @@ function App(props) {
         <Route path="/cardslist" component={CardsList} />
         <Route path="/eventslist" component={EventsList} />
         <Route path="/radio" component={Radio} />
+        <Route path="/seiyuevent" component={SeiyuEvent} />
       </main>
     </div>
   );
