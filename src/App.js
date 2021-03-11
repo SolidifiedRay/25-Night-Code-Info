@@ -16,6 +16,7 @@ import { makeStyles, useTheme } from '@material-ui/core/styles';
 
 import MenuIcon from '@material-ui/icons/Menu';
 import HomeIcon from '@material-ui/icons/Home';
+import InfoIcon from '@material-ui/icons/Info';
 import PersonIcon from '@material-ui/icons/Person';
 import PeopleAltIcon from '@material-ui/icons/PeopleAlt';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
@@ -24,6 +25,9 @@ import LocalLibraryIcon from '@material-ui/icons/LocalLibrary';
 import ForumIcon from '@material-ui/icons/Forum';
 import ChatIcon from '@material-ui/icons/Chat';
 import LiveTvIcon from '@material-ui/icons/LiveTv';
+import RadioIcon from '@material-ui/icons/Radio';
+import LanguageIcon from '@material-ui/icons/Language';
+import MusicVideoIcon from '@material-ui/icons/MusicVideo';
 
 import Underdevelopment from './routes/Underdevelopment';
 import Home from './routes/Home';
@@ -81,6 +85,11 @@ function App(props) {
       text: "首页",
       icon: <HomeIcon />,
       onClick: () => history.push("/")
+    },
+    {
+      text: "关于",
+      icon: <InfoIcon />,
+      onClick: () => history.push("/")
     }
   ];
 
@@ -133,6 +142,19 @@ function App(props) {
     }
   ]
 
+  const SeiyuuItenList = [
+    {
+      text: "电台节目",
+      icon: <RadioIcon />,
+      onClick: () => history.push("/underdevelopment")
+    },
+    {
+      text: "官方延伸",
+      icon: <LanguageIcon />,
+      onClick: () => history.push("/underdevelopment")
+    }
+  ]
+
   const drawer = (
     <div>
       <div className={classes.toolbar} />
@@ -175,6 +197,18 @@ function App(props) {
       <Divider />
       <List>
         {talkItemList.map((item, index) => {
+          const {text, icon, onClick } = item;
+          return(
+            <ListItem button key={text} onClick={onClick}>
+              <ListItemIcon>{icon}</ListItemIcon>
+              <ListItemText primary={text} />
+            </ListItem>
+          );
+        })}
+      </List>
+      <Divider />
+      <List>
+        {SeiyuuItenList.map((item, index) => {
           const {text, icon, onClick } = item;
           return(
             <ListItem button key={text} onClick={onClick}>
