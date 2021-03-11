@@ -34,7 +34,7 @@ function EventsList() {
   return (
     <div className={classes.root}>
       <Alert severity="info">
-        感谢Project_SEKAI资讯站字幕组的汉化！看完记得3连支持一下！
+        感谢PJS字幕组的汉化和制作！看完记得3连支持一下！
       </Alert>
       <Grid
         container
