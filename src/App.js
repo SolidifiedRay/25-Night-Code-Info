@@ -28,6 +28,7 @@ import LiveTvIcon from '@material-ui/icons/LiveTv';
 import Underdevelopment from './routes/Underdevelopment';
 import Home from './routes/Home';
 import CardsList from './routes/CardsList';
+import EventsList from './routes/EventsList';
 
 const drawerWidth = 240;
 
@@ -104,7 +105,7 @@ function App(props) {
     {
       text: "活动剧情",
       icon: <ImportContactsIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push("/eventslist")
     },
     {
       text: "卡面剧情",
@@ -242,6 +243,7 @@ function App(props) {
         <Route exact path="/" component={Home} />
         <Route path="/underdevelopment" component={Underdevelopment} />
         <Route path="/cardslist" component={CardsList} />
+        <Route path="/eventslist" component={EventsList} />
       </main>
     </div>
   );
