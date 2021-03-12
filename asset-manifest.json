@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/25-Night-Code-Info/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/25-Night-Code-Info/static/js/main.55347884.chunk.js",
-    "main.js.map": "/25-Night-Code-Info/static/js/main.55347884.chunk.js.map",
+    "main.js": "/25-Night-Code-Info/static/js/main.b4542b1f.chunk.js",
+    "main.js.map": "/25-Night-Code-Info/static/js/main.b4542b1f.chunk.js.map",
     "runtime-main.js": "/25-Night-Code-Info/static/js/runtime-main.c746069f.js",
     "runtime-main.js.map": "/25-Night-Code-Info/static/js/runtime-main.c746069f.js.map",
     "static/js/2.663bbef3.chunk.js": "/25-Night-Code-Info/static/js/2.663bbef3.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.c746069f.js",
     "static/js/2.663bbef3.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.55347884.chunk.js"
+    "static/js/main.b4542b1f.chunk.js"
   ]
 }
