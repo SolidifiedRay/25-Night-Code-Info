@@ -31,6 +31,7 @@ import MusicVideoIcon from '@material-ui/icons/MusicVideo';
 
 import Underdevelopment from './routes/Underdevelopment';
 import Home from './routes/Home';
+import About from './routes/About';
 import CardsList from './routes/CardsList';
 import EventsList from './routes/EventsList';
 import MainStory from './routes/MainStory';
@@ -91,7 +92,7 @@ function App(props) {
     {
       text: "关于",
       icon: <InfoIcon />,
-      onClick: () => history.push("/")
+      onClick: () => history.push("/about")
     }
   ];
 
@@ -278,6 +279,7 @@ function App(props) {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
         <Route path="/underdevelopment" component={Underdevelopment} />
         <Route path="/mainstory" component={MainStory} />
         <Route path="/cardslist" component={CardsList} />
