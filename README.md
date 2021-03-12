@@ -1,6 +1,8 @@
 # 25-ji, Night Code de.
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
+[![GitHub deployments](https://img.shields.io/github/deployments/SolidifiedRay/25-Night-Code-Info/github-pages?label=github-pages&style=flat-square)](https://github.com/SolidifiedRay/25-Night-Code-Info/deployments/activity_log?environment=github-pages)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
