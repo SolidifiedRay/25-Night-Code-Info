@@ -97,18 +97,18 @@ function CardsList() {
     {
       id: 'knd4001',
       path: 'knd/4001.png',
-      title: '絶たれた糸',
-      subtitle: '初音未来 - 囚われのマリオネット（4星）',
-      prelink: 'https://www.bilibili.com/video/BV1ga4y1s75w',
-      postlink: 'https://www.bilibili.com/video/BV1354y1r7eG',
-    },
-    {
-      id: 'miku4001',
-      path: 'miku/4001.png',
       title: '生きているように',
       subtitle: '宵崎奏 - 囚われのマリオネット（4星）',
       prelink: 'https://www.bilibili.com/video/BV1zK4y177dx',
       postlink: 'https://www.bilibili.com/video/BV17V411y7d9',
+    },
+    {
+      id: 'miku4001',
+      path: 'miku/4001.png',
+      title: '絶たれた糸',
+      subtitle: '初音未来 - 囚われのマリオネット（4星）',
+      prelink: 'https://www.bilibili.com/video/BV1ga4y1s75w',
+      postlink: 'https://www.bilibili.com/video/BV1354y1r7eG',
     },
     {
       id: 'mzk3002',
