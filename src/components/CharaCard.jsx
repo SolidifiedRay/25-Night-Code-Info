@@ -18,10 +18,10 @@ const useStyles = makeStyles({
 });
 
 const redirect = (path) => {
-  window.open(path)
-}
+  window.open(path);
+};
 
-function CharaCard( { id, path, title, subtitle, prelink, postlink }) {
+function CharaCard({ id, path, title, subtitle, prelink, postlink }) {
   const classes = useStyles();
 
   return (
@@ -33,17 +33,29 @@ function CharaCard( { id, path, title, subtitle, prelink, postlink }) {
       />
       <CardContent>
         <Typography gutterBottom variant="body1" component="h2">
-          { title }
+          {title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          { subtitle }
+          {subtitle}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary" onClick={() => { redirect(prelink)}}>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => {
+            redirect(prelink);
+          }}
+        >
           前篇
         </Button>
-        <Button size="small" color="primary" onClick={() => { redirect(postlink)}}>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => {
+            redirect(postlink);
+          }}
+        >
           后篇
         </Button>
       </CardActions>

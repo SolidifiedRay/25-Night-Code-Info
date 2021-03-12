@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import MuiAlert from '@material-ui/lab/Alert';
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -19,16 +19,15 @@ function Home() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <Alert severity="info">
-          看到这个关系图了吗，全都可以嗑
-      </Alert>
-      <br/>
+      <Alert severity="info">看到这个关系图了吗，全都可以嗑</Alert>
+      <br />
       <img
         src={`${process.env.PUBLIC_URL}/images/banner_cn.jpg`}
         alt="banner"
-        style={{ width: "100%"}}
+        style={{ width: '100%' }}
       />
-      <br/><br/>
+      <br />
+      <br />
     </div>
   );
 }

@@ -18,10 +18,10 @@ const useStyles = makeStyles({
 });
 
 const redirect = (path) => {
-  window.open(path)
-}
+  window.open(path);
+};
 
-function SeiyuEventCard( { id, path, title, subtitle, link }) {
+function SeiyuEventCard({ id, path, title, subtitle, link }) {
   const classes = useStyles();
 
   return (
@@ -33,14 +33,20 @@ function SeiyuEventCard( { id, path, title, subtitle, link }) {
       />
       <CardContent>
         <Typography gutterBottom variant="body1" component="h2">
-          { title }
+          {title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          { subtitle }
+          {subtitle}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary" onClick={() => {redirect(link)}}>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => {
+            redirect(link);
+          }}
+        >
           点击观看
         </Button>
       </CardActions>

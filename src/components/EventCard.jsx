@@ -18,10 +18,10 @@ const useStyles = makeStyles({
 });
 
 const redirect = (path) => {
-  window.open(path)
-}
+  window.open(path);
+};
 
-function EventCard( { id, path, title, subtitle, time, link }) {
+function EventCard({ id, path, title, subtitle, time, link }) {
   const classes = useStyles();
 
   return (
@@ -33,17 +33,23 @@ function EventCard( { id, path, title, subtitle, time, link }) {
       />
       <CardContent>
         <Typography gutterBottom variant="body1" component="h2">
-          { title }
+          {title}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          { subtitle }
+          {subtitle}
         </Typography>
         <Typography variant="body2" color="textSecondary" component="p">
-          { time }
+          {time}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary" onClick={() => { redirect(link)}}>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => {
+            redirect(link);
+          }}
+        >
           活动剧情
         </Button>
       </CardActions>

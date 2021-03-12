@@ -18,10 +18,10 @@ const useStyles = makeStyles({
 });
 
 const redirect = (path) => {
-  window.open(path)
-}
+  window.open(path);
+};
 
-function MainStoryCard( { id, path, title, link }) {
+function MainStoryCard({ id, path, title, link }) {
   const classes = useStyles();
 
   return (
@@ -33,11 +33,17 @@ function MainStoryCard( { id, path, title, link }) {
       />
       <CardContent>
         <Typography gutterBottom variant="body1" component="h2">
-          { title }
+          {title}
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" color="primary" onClick={() => { redirect(link)}}>
+        <Button
+          size="small"
+          color="primary"
+          onClick={() => {
+            redirect(link);
+          }}
+        >
           主线剧情
         </Button>
       </CardActions>

@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, Route } from "react-router-dom";
+import { withRouter, Route } from 'react-router-dom';
 import AppBar from '@material-ui/core/AppBar';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import Divider from '@material-ui/core/Divider';
@@ -85,78 +85,78 @@ function App(props) {
 
   const commonItemList = [
     {
-      text: "首页",
+      text: '首页',
       icon: <HomeIcon />,
-      onClick: () => history.push("/")
+      onClick: () => history.push('/'),
     },
     {
-      text: "关于",
+      text: '关于',
       icon: <InfoIcon />,
-      onClick: () => history.push("/about")
-    }
+      onClick: () => history.push('/about'),
+    },
   ];
 
   const teamItemList = [
     {
-      text: "团体介绍",
+      text: '团体介绍',
       icon: <PersonIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push('/underdevelopment'),
     },
     {
-      text: "角色介绍",
+      text: '角色介绍',
       icon: <PeopleAltIcon />,
-      onClick: () => history.push("/underdevelopment")
-    }
-  ]
+      onClick: () => history.push('/underdevelopment'),
+    },
+  ];
 
   const storyItemList = [
     {
-      text: "主线剧情",
+      text: '主线剧情',
       icon: <MenuBookIcon />,
-      onClick: () => history.push("/mainstory")
+      onClick: () => history.push('/mainstory'),
     },
     {
-      text: "活动剧情",
+      text: '活动剧情',
       icon: <ImportContactsIcon />,
-      onClick: () => history.push("/eventslist")
+      onClick: () => history.push('/eventslist'),
     },
     {
-      text: "卡面剧情",
+      text: '卡面剧情',
       icon: <LocalLibraryIcon />,
-      onClick: () => history.push("/cardslist")
-    }
-  ]
+      onClick: () => history.push('/cardslist'),
+    },
+  ];
 
   const talkItemList = [
     {
-      text: "地图对话",
+      text: '地图对话',
       icon: <ForumIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push('/underdevelopment'),
     },
     {
-      text: "节日对话",
+      text: '节日对话',
       icon: <ChatIcon />,
-      onClick: () => history.push("/underdevelopment")
+      onClick: () => history.push('/underdevelopment'),
     },
     {
-      text: "Live对话",
+      text: 'Live对话',
       icon: <LiveTvIcon />,
-      onClick: () => history.push("/underdevelopment")
-    }
-  ]
+      onClick: () => history.push('/underdevelopment'),
+    },
+  ];
 
   const SeiyuuItenList = [
     {
-      text: "电台节目",
+      text: '电台节目',
       icon: <RadioIcon />,
-      onClick: () => history.push("/radio")
+      onClick: () => history.push('/radio'),
     },
     {
-      text: "其他节目",
+      text: '其他节目',
       icon: <LanguageIcon />,
-      onClick: () => history.push("/seiyuevent")
-    }
-  ]
+      onClick: () => history.push('/seiyuevent'),
+    },
+  ];
 
   const drawer = (
     <div>
@@ -164,8 +164,8 @@ function App(props) {
       <Divider />
       <List>
         {commonItemList.map((item, index) => {
-          const {text, icon, onClick } = item;
-          return(
+          const { text, icon, onClick } = item;
+          return (
             <ListItem button key={text} onClick={onClick}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
@@ -176,8 +176,8 @@ function App(props) {
       <Divider />
       <List>
         {teamItemList.map((item, index) => {
-          const {text, icon, onClick } = item;
-          return(
+          const { text, icon, onClick } = item;
+          return (
             <ListItem button key={text} onClick={onClick}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
@@ -188,8 +188,8 @@ function App(props) {
       <Divider />
       <List>
         {storyItemList.map((item, index) => {
-          const {text, icon, onClick } = item;
-          return(
+          const { text, icon, onClick } = item;
+          return (
             <ListItem button key={text} onClick={onClick}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
@@ -200,8 +200,8 @@ function App(props) {
       <Divider />
       <List>
         {talkItemList.map((item, index) => {
-          const {text, icon, onClick } = item;
-          return(
+          const { text, icon, onClick } = item;
+          return (
             <ListItem button key={text} onClick={onClick}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
@@ -212,8 +212,8 @@ function App(props) {
       <Divider />
       <List>
         {SeiyuuItenList.map((item, index) => {
-          const {text, icon, onClick } = item;
-          return(
+          const { text, icon, onClick } = item;
+          return (
             <ListItem button key={text} onClick={onClick}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
@@ -224,7 +224,8 @@ function App(props) {
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
     <div className={classes.root}>

@@ -1,26 +1,25 @@
 import React from 'react';
 import EventCard from '../components/EventCard';
-import { makeStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import MuiAlert from '@material-ui/lab/Alert';
-
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />;
 }
 
-const useStyles = makeStyles(theme => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-      flexGrow: 1,
-      padding: theme.spacing(2),
-      '& > * + *': {
-        marginTop: theme.spacing(2),
-      },
+    flexGrow: 1,
+    padding: theme.spacing(2),
+    '& > * + *': {
+      marginTop: theme.spacing(2),
+    },
   },
-}))
+}));
 
 function EventsList() {
-  const classes = useStyles()
+  const classes = useStyles();
 
   const cardItems = [
     {
@@ -29,7 +28,7 @@ function EventsList() {
       title: '満たされないペイルカラー',
       subtitle: '团活',
       time: '2021/2/18 ~ 2021/2/26',
-      link: 'https://www.bilibili.com/video/BV155411E75N'
+      link: 'https://www.bilibili.com/video/BV155411E75N',
     },
     {
       id: '20201231',
@@ -37,7 +36,7 @@ function EventsList() {
       title: 'セカイのハッピーニューイヤー！',
       subtitle: '2021新年活动：全员',
       time: '2020/12/31 ~ 2021/1/8',
-      link: 'https://www.bilibili.com/video/BV12p4y1B7ZS'
+      link: 'https://www.bilibili.com/video/BV12p4y1B7ZS',
     },
     {
       id: '20201210',
@@ -45,7 +44,7 @@ function EventsList() {
       title: 'KAMIKOU FESTIVAL！',
       subtitle: '混活：晓山瑞希',
       time: '2020/12/10 ~ 2020/10/18',
-      link: 'https://www.bilibili.com/video/BV1gf4y1e76V'
+      link: 'https://www.bilibili.com/video/BV1gf4y1e76V',
     },
     {
       id: '20201109',
@@ -53,7 +52,7 @@ function EventsList() {
       title: '走れ！体育祭！～実行委員は大忙し～',
       subtitle: '混活：朝比奈真冬',
       time: '2020/11/9 ~ 2020/11/17',
-      link: 'https://www.bilibili.com/video/BV1Vz4y1y7aM'
+      link: 'https://www.bilibili.com/video/BV1Vz4y1y7aM',
     },
     {
       id: '20201020',
@@ -61,9 +60,9 @@ function EventsList() {
       title: '囚われのマリオネット',
       subtitle: '团活',
       time: '2020/10/20 ~ 2020/10/29',
-      link: 'https://www.bilibili.com/video/BV1ut4y1e7Aa'
-    }
-  ]
+      link: 'https://www.bilibili.com/video/BV1ut4y1e7Aa',
+    },
+  ];
 
   return (
     <div className={classes.root}>
@@ -77,17 +76,17 @@ function EventsList() {
         justify="flex-start"
         alignItems="flex-start"
       >
-        {cardItems.map(item => (
+        {cardItems.map((item) => (
           <Grid item xs={12} sm={6} md={3} key={cardItems.indexOf(item)}>
             <EventCard
-              id = {item.id}
-              path = {item.path}
-              title = {item.title}
-              subtitle = {item.subtitle}
-              time = {item.time}
-              link = {item.link}
+              id={item.id}
+              path={item.path}
+              title={item.title}
+              subtitle={item.subtitle}
+              time={item.time}
+              link={item.link}
             />
-        </Grid>
+          </Grid>
         ))}
       </Grid>
     </div>
