@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/25-Night-Code-Info/static/css/main.9de791fe.chunk.css",
+    "main.css": "/25-Night-Code-Info/static/css/main.be8b56dc.chunk.css",
     "main.js": "/25-Night-Code-Info/static/js/main.84c3d576.chunk.js",
     "main.js.map": "/25-Night-Code-Info/static/js/main.84c3d576.chunk.js.map",
     "runtime-main.js": "/25-Night-Code-Info/static/js/runtime-main.0b774136.js",
@@ -10,13 +10,13 @@
     "static/js/3.3de8e060.chunk.js": "/25-Night-Code-Info/static/js/3.3de8e060.chunk.js",
     "static/js/3.3de8e060.chunk.js.map": "/25-Night-Code-Info/static/js/3.3de8e060.chunk.js.map",
     "index.html": "/25-Night-Code-Info/index.html",
-    "static/css/main.9de791fe.chunk.css.map": "/25-Night-Code-Info/static/css/main.9de791fe.chunk.css.map",
+    "static/css/main.be8b56dc.chunk.css.map": "/25-Night-Code-Info/static/css/main.be8b56dc.chunk.css.map",
     "static/js/2.79b6f074.chunk.js.LICENSE.txt": "/25-Night-Code-Info/static/js/2.79b6f074.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.0b774136.js",
     "static/js/2.79b6f074.chunk.js",
-    "static/css/main.9de791fe.chunk.css",
+    "static/css/main.be8b56dc.chunk.css",
     "static/js/main.84c3d576.chunk.js"
   ]
 }
