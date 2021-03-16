@@ -34,3 +34,17 @@ code {
 #root .MuiListItem-root:hover,.MuiListItem-root:hover .MuiSvgIcon-root{
   color:#885599;
 }
+
+/* 抽屉滚动条 */
+#root .makeStyles-drawerPaper-6::-webkit-scrollbar-track {
+	border-radius:10px;
+	background-color:#fff;
+}
+#root .makeStyles-drawerPaper-6::-webkit-scrollbar {
+	width:12px;
+	background-color:#fff;
+}
+#root .makeStyles-drawerPaper-6::-webkit-scrollbar-thumb {
+	border-radius:10px;
+	background-color:#885599;
+}
