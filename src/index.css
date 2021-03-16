@@ -36,15 +36,15 @@ code {
 }
 
 /* 抽屉滚动条 */
-#root .makeStyles-drawerPaper-6::-webkit-scrollbar-track {
+#root .MuiDrawer-paper::-webkit-scrollbar-track {
 	border-radius:10px;
 	background-color:#fff;
 }
-#root .makeStyles-drawerPaper-6::-webkit-scrollbar {
+#root .MuiDrawer-paper::-webkit-scrollbar {
 	width:12px;
 	background-color:#fff;
 }
-#root .makeStyles-drawerPaper-6::-webkit-scrollbar-thumb {
+#root .MuiDrawer-paper::-webkit-scrollbar-thumb {
 	border-radius:10px;
 	background-color:#885599;
 }
