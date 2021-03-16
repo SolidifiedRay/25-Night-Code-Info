@@ -11,3 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* 导航栏 */
+#root .MuiAppBar-colorPrimary{
+  background-color: #885599;
+  box-shadow: 0px 4px 10px 0px rgba(59, 21, 72, 0.3);
+}
+
+/* 默认提示条 */
+#root .MuiAlert-filledInfo{
+  background-color: #b287c0;
+  box-shadow: 0px 3px 10px 0px rgba(84, 21, 105, 0.3);
+}
+
+/* 警告提示条 */
+#root .MuiAlert-filledError{
+  background-color: #e45263;
+  box-shadow: 0px 4px 10px 0px rgba(221, 23, 37, 0.3);
+}
+
+/* 抽屉悬浮色 */
+#root .MuiListItem-root:hover,.MuiListItem-root:hover .MuiSvgIcon-root{
+  color:#885599;
+}
