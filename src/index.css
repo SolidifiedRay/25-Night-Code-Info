@@ -48,3 +48,9 @@ code {
 	border-radius:10px;
 	background-color:#885599;
 }
+
+/* 回到顶部按钮 */
+#root .MuiFab-secondary{
+  background-color:#885599;
+  box-shadow: 0px 4px 10px 0px rgba(59, 21, 72, 0.3);
+}

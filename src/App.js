@@ -38,6 +38,12 @@ import MainStory from './routes/MainStory';
 import Radio from './routes/Radio';
 import SeiyuEvent from './routes/SeiyuEvent';
 
+import useScrollTrigger from '@material-ui/core/useScrollTrigger';
+import Zoom from '@material-ui/core/Zoom';
+import PropTypes from 'prop-types';
+import Fab from '@material-ui/core/Fab';
+import KeyboardArrowUpIcon from '@material-ui/icons/KeyboardArrowUp';
+
 const drawerWidth = 240;
 
 const useStyles = makeStyles((theme) => ({
@@ -72,6 +78,53 @@ const useStyles = makeStyles((theme) => ({
     padding: theme.spacing(3),
   },
 }));
+
+const scrollStyles = makeStyles((theme) => ({
+  root: {
+    position: 'fixed',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  },
+}));
+
+function ScrollTop(props) {
+  const { children, window } = props;
+  const classes = scrollStyles();
+  // Note that you normally won't need to set the window ref as useScrollTrigger
+  // will default to window.
+  // This is only being set here because the demo is in an iframe.
+  const trigger = useScrollTrigger({
+    target: window ? window() : undefined,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
+
+    if (anchor) {
+      anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  return (
+    <Zoom in={trigger}>
+      <div onClick={handleClick} role="presentation" className={classes.root}>
+        {children}
+      </div>
+    </Zoom>
+  );
+}
+
+ScrollTop.propTypes = {
+  children: PropTypes.element.isRequired,
+  /**
+   * Injected by the documentation to work in an iframe.
+   * You won't need it on your project.
+   */
+  window: PropTypes.func,
+};
+
 
 function App(props) {
   const { window, history } = props;
@@ -246,6 +299,7 @@ function App(props) {
           </Typography>
         </Toolbar>
       </AppBar>
+      
       <nav className={classes.drawer} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
@@ -277,19 +331,30 @@ function App(props) {
           </Drawer>
         </Hidden>
       </nav>
-      <main className={classes.content}>
-        <div className={classes.toolbar} />
-        <Route exact path="/" component={Home} />
-        <Route path="/about" component={About} />
-        <Route path="/underdevelopment" component={Underdevelopment} />
-        <Route path="/mainstory" component={MainStory} />
-        <Route path="/cardslist" component={CardsList} />
-        <Route path="/eventslist" component={EventsList} />
-        <Route path="/radio" component={Radio} />
-        <Route path="/seiyuevent" component={SeiyuEvent} />
-      </main>
+      <React.Fragment>
+        <main className={classes.content}>
+          <div className={classes.toolbar}  id="back-to-top-anchor"/>
+          
+          <Route exact path="/" component={Home} />
+          <Route path="/about" component={About} />
+          <Route path="/underdevelopment" component={Underdevelopment} />
+          <Route path="/mainstory" component={MainStory} />
+          <Route path="/cardslist" component={CardsList} />
+          <Route path="/eventslist" component={EventsList} />
+          <Route path="/radio" component={Radio} />
+          <Route path="/seiyuevent" component={SeiyuEvent} />
+          
+        </main>
+        <ScrollTop {...props}>
+          <Fab color="secondary" size="small" aria-label="scroll back to top">
+            <KeyboardArrowUpIcon />
+          </Fab>
+        </ScrollTop>
+      </React.Fragment>
     </div>
   );
 }
+
+
 
 export default withRouter(App);
