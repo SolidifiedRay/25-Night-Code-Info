@@ -211,6 +211,12 @@ function App(props) {
     },
   ];
 
+  const [selectedIndex, setSelectedIndex] = React.useState(1);
+
+  const handleListItemClick = (event, index) => {
+    setSelectedIndex(index);
+  };
+
   const drawer = (
     <div>
       <div className={classes.toolbar} />
@@ -219,7 +225,8 @@ function App(props) {
         {commonItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} onClick={onClick}>
+            <ListItem button key={text} selected={selectedIndex === text}
+            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -231,7 +238,8 @@ function App(props) {
         {teamItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} onClick={onClick}>
+            <ListItem button key={text} selected={selectedIndex === text}
+            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -243,7 +251,8 @@ function App(props) {
         {storyItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} onClick={onClick}>
+            <ListItem button key={text} selected={selectedIndex === text}
+            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -255,7 +264,8 @@ function App(props) {
         {talkItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} onClick={onClick}>
+            <ListItem button key={text} selected={selectedIndex === text}
+            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -267,7 +277,8 @@ function App(props) {
         {SeiyuuItenList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} onClick={onClick}>
+            <ListItem button key={text} selected={selectedIndex === text}
+            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>

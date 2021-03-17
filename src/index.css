@@ -31,20 +31,33 @@ code {
 }
 
 /* 抽屉悬浮色 */
-#root .MuiListItem-root:hover,.MuiListItem-root:hover .MuiSvgIcon-root{
+#root .MuiListItem-root:hover,#root .MuiListItem-root:hover .MuiSvgIcon-root{
   color:#885599;
 }
 
+/* 抽屉选中色 */
+#root .MuiListItem-root.Mui-selected{
+  color:#885599;
+  background-color: rgba(178, 135, 192, 0.2);
+}
+
+#root .MuiListItem-root.Mui-selected .MuiListItemIcon-root{
+  color:#885599;
+}
+
+
 /* 抽屉滚动条 */
-#root .makeStyles-drawerPaper-6::-webkit-scrollbar-track {
+#root .MuiDrawer-paper::-webkit-scrollbar-track {
 	border-radius:10px;
 	background-color:#fff;
 }
-#root .makeStyles-drawerPaper-6::-webkit-scrollbar {
+
+#root .MuiDrawer-paper::-webkit-scrollbar {
 	width:12px;
 	background-color:#fff;
 }
-#root .makeStyles-drawerPaper-6::-webkit-scrollbar-thumb {
+
+#root .MuiDrawer-paper::-webkit-scrollbar-thumb {
 	border-radius:10px;
 	background-color:#885599;
 }
@@ -54,3 +67,4 @@ code {
   background-color:#885599;
   box-shadow: 0px 4px 10px 0px rgba(59, 21, 72, 0.3);
 }
+
