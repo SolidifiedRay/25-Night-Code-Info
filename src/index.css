@@ -51,12 +51,10 @@ code {
 	border-radius:10px;
 	background-color:#fff;
 }
-
 #root .MuiDrawer-paper::-webkit-scrollbar {
 	width:12px;
 	background-color:#fff;
 }
-
 #root .MuiDrawer-paper::-webkit-scrollbar-thumb {
 	border-radius:10px;
 	background-color:#885599;
