@@ -100,7 +100,9 @@ function ScrollTop(props) {
   });
 
   const handleClick = (event) => {
-    const anchor = (event.target.ownerDocument || document).querySelector('#back-to-top-anchor');
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      '#back-to-top-anchor'
+    );
 
     if (anchor) {
       anchor.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -124,7 +126,6 @@ ScrollTop.propTypes = {
    */
   window: PropTypes.func,
 };
-
 
 function App(props) {
   const { window, history } = props;
@@ -211,10 +212,10 @@ function App(props) {
     },
   ];
 
-  const [selectedIndex, setSelectedIndex] = React.useState(1);
+  const [selectedItem, setSelectedItem] = React.useState('首页');
 
-  const handleListItemClick = (event, index) => {
-    setSelectedIndex(index);
+  const handleListItemClick = (event, text) => {
+    setSelectedItem(text);
   };
 
   const drawer = (
@@ -225,8 +226,15 @@ function App(props) {
         {commonItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} selected={selectedIndex === text}
-            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
+            <ListItem
+              button
+              key={text}
+              selected={selectedItem === text}
+              onClick={(event) => {
+                handleListItemClick(event, text);
+                onClick();
+              }}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -238,8 +246,15 @@ function App(props) {
         {teamItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} selected={selectedIndex === text}
-            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
+            <ListItem
+              button
+              key={text}
+              selected={selectedItem === text}
+              onClick={(event) => {
+                handleListItemClick(event, text);
+                onClick();
+              }}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -251,8 +266,15 @@ function App(props) {
         {storyItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} selected={selectedIndex === text}
-            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
+            <ListItem
+              button
+              key={text}
+              selected={selectedItem === text}
+              onClick={(event) => {
+                handleListItemClick(event, text);
+                onClick();
+              }}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -264,8 +286,15 @@ function App(props) {
         {talkItemList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} selected={selectedIndex === text}
-            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
+            <ListItem
+              button
+              key={text}
+              selected={selectedItem === text}
+              onClick={(event) => {
+                handleListItemClick(event, text);
+                onClick();
+              }}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -277,8 +306,15 @@ function App(props) {
         {SeiyuuItenList.map((item, index) => {
           const { text, icon, onClick } = item;
           return (
-            <ListItem button key={text} selected={selectedIndex === text}
-            onClick={(event) => {handleListItemClick(event, text);onClick()}}>
+            <ListItem
+              button
+              key={text}
+              selected={selectedItem === text}
+              onClick={(event) => {
+                handleListItemClick(event, text);
+                onClick();
+              }}
+            >
               <ListItemIcon>{icon}</ListItemIcon>
               <ListItemText primary={text} />
             </ListItem>
@@ -310,7 +346,7 @@ function App(props) {
           </Typography>
         </Toolbar>
       </AppBar>
-      
+
       <nav className={classes.drawer} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
@@ -344,8 +380,8 @@ function App(props) {
       </nav>
       <React.Fragment>
         <main className={classes.content}>
-          <div className={classes.toolbar}  id="back-to-top-anchor"/>
-          
+          <div className={classes.toolbar} id="back-to-top-anchor" />
+
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/underdevelopment" component={Underdevelopment} />
@@ -354,7 +390,6 @@ function App(props) {
           <Route path="/eventslist" component={EventsList} />
           <Route path="/radio" component={Radio} />
           <Route path="/seiyuevent" component={SeiyuEvent} />
-          
         </main>
         <ScrollTop {...props}>
           <Fab color="secondary" size="small" aria-label="scroll back to top">
@@ -365,7 +400,5 @@ function App(props) {
     </div>
   );
 }
-
-
 
 export default withRouter(App);
