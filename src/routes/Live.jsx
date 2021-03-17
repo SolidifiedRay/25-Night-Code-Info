@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-function Underdevelopment() {
+function Live() {
   const classes = useStyles();
 
   return (
@@ -25,4 +25,4 @@ function Underdevelopment() {
   );
 }
 
-export default Underdevelopment;
+export default Live;

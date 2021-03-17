@@ -27,14 +27,17 @@ import ChatIcon from '@material-ui/icons/Chat';
 import LiveTvIcon from '@material-ui/icons/LiveTv';
 import RadioIcon from '@material-ui/icons/Radio';
 import LanguageIcon from '@material-ui/icons/Language';
-import MusicVideoIcon from '@material-ui/icons/MusicVideo';
 
-import Underdevelopment from './routes/Underdevelopment';
 import Home from './routes/Home';
 import About from './routes/About';
+import Group from './routes/Group';
+import Characters from './routes/Characters';
 import CardsList from './routes/CardsList';
 import EventsList from './routes/EventsList';
 import MainStory from './routes/MainStory';
+import Map from './routes/Map';
+import Festival from './routes/Festival';
+import Live from './routes/Live';
 import Radio from './routes/Radio';
 import SeiyuEvent from './routes/SeiyuEvent';
 
@@ -128,38 +131,29 @@ ScrollTop.propTypes = {
 };
 
 function App(props) {
-  const { window, history } = props;
-  const classes = useStyles();
-  const theme = useTheme();
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-
-  const handleDrawerToggle = () => {
-    setMobileOpen(!mobileOpen);
-  };
-
   const commonItemList = [
     {
       text: '首页',
       icon: <HomeIcon />,
-      onClick: () => history.push('/'),
+      path: '/',
     },
     {
       text: '关于',
       icon: <InfoIcon />,
-      onClick: () => history.push('/about'),
+      path: '/about',
     },
   ];
 
   const teamItemList = [
     {
       text: '团体介绍',
-      icon: <PersonIcon />,
-      onClick: () => history.push('/underdevelopment'),
+      icon: <PeopleAltIcon />,
+      path: '/group',
     },
     {
       text: '角色介绍',
-      icon: <PeopleAltIcon />,
-      onClick: () => history.push('/underdevelopment'),
+      icon: <PersonIcon />,
+      path: '/characters',
     },
   ];
 
@@ -167,17 +161,17 @@ function App(props) {
     {
       text: '主线剧情',
       icon: <MenuBookIcon />,
-      onClick: () => history.push('/mainstory'),
+      path: '/mainstory',
     },
     {
       text: '活动剧情',
       icon: <ImportContactsIcon />,
-      onClick: () => history.push('/eventslist'),
+      path: '/eventslist',
     },
     {
       text: '卡面剧情',
       icon: <LocalLibraryIcon />,
-      onClick: () => history.push('/cardslist'),
+      path: '/cardslist',
     },
   ];
 
@@ -185,17 +179,17 @@ function App(props) {
     {
       text: '地图对话',
       icon: <ForumIcon />,
-      onClick: () => history.push('/underdevelopment'),
+      path: '/map',
     },
     {
       text: '节日对话',
       icon: <ChatIcon />,
-      onClick: () => history.push('/underdevelopment'),
+      path: '/festival',
     },
     {
       text: 'Live对话',
       icon: <LiveTvIcon />,
-      onClick: () => history.push('/underdevelopment'),
+      path: '/live',
     },
   ];
 
@@ -203,19 +197,30 @@ function App(props) {
     {
       text: '电台节目',
       icon: <RadioIcon />,
-      onClick: () => history.push('/radio'),
+      path: '/radio',
     },
     {
       text: '其他节目',
       icon: <LanguageIcon />,
-      onClick: () => history.push('/seiyuevent'),
+      path: '/seiyuevent',
     },
   ];
 
-  const [selectedItem, setSelectedItem] = React.useState('首页');
+  const { window, history } = props;
+  const classes = useStyles();
+  const theme = useTheme();
+  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [selectedPath, setSelectedPath] = React.useState(
+    props.location.pathname
+  );
 
-  const handleListItemClick = (event, text) => {
-    setSelectedItem(text);
+  const handleListItemClick = (event, path) => {
+    setSelectedPath(path);
+    history.push(path);
+  };
+
+  const handleDrawerToggle = () => {
+    setMobileOpen(!mobileOpen);
   };
 
   const drawer = (
@@ -224,15 +229,14 @@ function App(props) {
       <Divider />
       <List>
         {commonItemList.map((item, index) => {
-          const { text, icon, onClick } = item;
+          const { text, icon, path } = item;
           return (
             <ListItem
               button
               key={text}
-              selected={selectedItem === text}
+              selected={selectedPath === path}
               onClick={(event) => {
-                handleListItemClick(event, text);
-                onClick();
+                handleListItemClick(event, path);
               }}
             >
               <ListItemIcon>{icon}</ListItemIcon>
@@ -244,15 +248,14 @@ function App(props) {
       <Divider />
       <List>
         {teamItemList.map((item, index) => {
-          const { text, icon, onClick } = item;
+          const { text, icon, path } = item;
           return (
             <ListItem
               button
               key={text}
-              selected={selectedItem === text}
+              selected={selectedPath === path}
               onClick={(event) => {
-                handleListItemClick(event, text);
-                onClick();
+                handleListItemClick(event, path);
               }}
             >
               <ListItemIcon>{icon}</ListItemIcon>
@@ -264,15 +267,14 @@ function App(props) {
       <Divider />
       <List>
         {storyItemList.map((item, index) => {
-          const { text, icon, onClick } = item;
+          const { text, icon, path } = item;
           return (
             <ListItem
               button
               key={text}
-              selected={selectedItem === text}
+              selected={selectedPath === path}
               onClick={(event) => {
-                handleListItemClick(event, text);
-                onClick();
+                handleListItemClick(event, path);
               }}
             >
               <ListItemIcon>{icon}</ListItemIcon>
@@ -284,15 +286,14 @@ function App(props) {
       <Divider />
       <List>
         {talkItemList.map((item, index) => {
-          const { text, icon, onClick } = item;
+          const { text, icon, path } = item;
           return (
             <ListItem
               button
               key={text}
-              selected={selectedItem === text}
+              selected={selectedPath === path}
               onClick={(event) => {
-                handleListItemClick(event, text);
-                onClick();
+                handleListItemClick(event, path);
               }}
             >
               <ListItemIcon>{icon}</ListItemIcon>
@@ -304,15 +305,14 @@ function App(props) {
       <Divider />
       <List>
         {SeiyuuItenList.map((item, index) => {
-          const { text, icon, onClick } = item;
+          const { text, icon, path } = item;
           return (
             <ListItem
               button
               key={text}
-              selected={selectedItem === text}
+              selected={selectedPath === path}
               onClick={(event) => {
-                handleListItemClick(event, text);
-                onClick();
+                handleListItemClick(event, path);
               }}
             >
               <ListItemIcon>{icon}</ListItemIcon>
@@ -384,10 +384,14 @@ function App(props) {
 
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
-          <Route path="/underdevelopment" component={Underdevelopment} />
+          <Route path="/group" component={Group} />
+          <Route path="/characters" component={Characters} />
           <Route path="/mainstory" component={MainStory} />
           <Route path="/cardslist" component={CardsList} />
           <Route path="/eventslist" component={EventsList} />
+          <Route path="/map" component={Map} />
+          <Route path="/festival" component={Festival} />
+          <Route path="/live" component={Live} />
           <Route path="/radio" component={Radio} />
           <Route path="/seiyuevent" component={SeiyuEvent} />
         </main>

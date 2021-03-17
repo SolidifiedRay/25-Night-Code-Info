@@ -44,6 +44,7 @@ function Home() {
           <a
             href="https://github.com/SolidifiedRay/25-Night-Code-Info"
             target="_blank"
+            rel="noreferrer"
           >
             <GitHubIcon fontSize="small" /> 源码
           </a>
@@ -53,6 +54,7 @@ function Home() {
           <a
             href="https://weibo.com/6209419972/profile?topnav=1&wvr=6"
             target="_blank"
+            rel="noreferrer"
           >
             <MailIcon fontSize="small" /> 联系我（微博）
           </a>
