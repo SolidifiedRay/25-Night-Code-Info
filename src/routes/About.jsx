@@ -39,6 +39,13 @@ function Home() {
         </Box>
       </Typography>
       <Divider />
+      <Typography component="div">
+        <Box textAlign="justify" m={1}>
+          - 感谢ELxxxLLL提供的各种汉化素材！
+          <br />- 感谢鹭帮忙一起开发！
+        </Box>
+      </Typography>
+      <Divider />
       <Grid container spacing={2}>
         <Grid item>
           <a
