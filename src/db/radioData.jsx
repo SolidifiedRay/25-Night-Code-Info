@@ -1,5 +1,12 @@
 export const radioData = [
   {
+    id: 'radio011',
+    path: '011.png',
+    title: '「25时，于夜之电台。」#11 ',
+    subtitle: '佐藤日向 x 铃木实里',
+    link: 'https://www.bilibili.com/video/BV1qy4y147rV',
+  },
+  {
     id: 'radio010',
     path: '010.png',
     title: '「25时，于夜之电台。」#10 ',
