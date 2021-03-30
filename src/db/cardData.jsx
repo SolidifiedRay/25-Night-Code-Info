@@ -1,5 +1,21 @@
 export const cardData = [
   {
+    id: 'knd4003',
+    path: 'knd/4003.png',
+    title: 'いつか見た夢を',
+    subtitle: '宵崎奏 - カラフルフェスティバルガチャ（限定4星) ',
+    prelink: 'https://www.bilibili.com/video/BV1T54y1h7Ac',
+    postlink: 'https://www.bilibili.com/video/BV1T54y1h7Ac',
+  },
+  {
+    id: 'mfy4003',
+    path: 'mfy/4003.png',
+    title: '潜る、私の中へ',
+    subtitle: '朝比奈真冬 - カラフルフェスティバルガチャ（限定4星) ',
+    prelink: 'https://www.bilibili.com/video/BV1564y1Q7Dm',
+    postlink: 'https://www.bilibili.com/video/BV1564y1Q7Dm',
+  },
+  {
     id: 'ena4002',
     path: 'ena/4002.png',
     title: '諦めたくないから',
