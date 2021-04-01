@@ -1,5 +1,13 @@
 export const cardData = [
   {
+    id: 'knd2002',
+    path: 'knd/2002.png',
+    title: 'この春を、あなたと……',
+    subtitle: '宵崎奏 - 君と歌う、桜舞う世界で（活动2星) ',
+    prelink: 'https://www.bilibili.com/video/BV1Mp4y187Jw',
+    postlink: 'https://www.bilibili.com/video/BV1Mp4y187Jw',
+  },
+  {
     id: 'knd4003',
     path: 'knd/4003.png',
     title: 'いつか見た夢を',
