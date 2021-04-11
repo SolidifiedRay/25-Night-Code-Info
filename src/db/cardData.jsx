@@ -1,5 +1,21 @@
 export const cardData = [
   {
+    id: 'knd3002',
+    path: 'knd/3002.png',
+    title: '儚さと美しさ',
+    subtitle: '宵崎奏 - シークレット・ディスタンス（活动3星) ',
+    prelink: 'https://www.bilibili.com/video/BV1J54y1b7Jp',
+    postlink: 'https://www.bilibili.com/video/BV1J54y1b7Jp',
+  },
+  {
+    id: 'mfy2002',
+    path: 'mfy/2002.png',
+    title: '廃校での出会い',
+    subtitle: '朝比奈真冬 - シークレット・ディスタンス（活动2星) ',
+    prelink: 'https://www.bilibili.com/video/BV1nv41177Zf',
+    postlink: 'https://www.bilibili.com/video/BV1nv41177Zf',
+  },
+  {
     id: 'knd2002',
     path: 'knd/2002.png',
     title: 'この春を、あなたと……',
