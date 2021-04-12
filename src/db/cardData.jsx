@@ -3,7 +3,7 @@ export const cardData = [
     id: 'ena4003',
     path: 'ena/4003.png',
     title: 'ミステリーツアーの洗礼？',
-    subtitle: '东云绘名 - シークレット・ディスタンス（3星) ',
+    subtitle: '东云绘名 - シークレット・ディスタンス（4星) ',
     prelink: 'https://www.bilibili.com/video/BV1xK4y1K7js',
     postlink: 'https://www.bilibili.com/video/BV1xK4y1K7js',
   },
