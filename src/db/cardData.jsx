@@ -1,5 +1,13 @@
 export const cardData = [
   {
+    id: 'mzk4002',
+    path: 'mzk/4002.png',
+    title: '気づいてしまった想い',
+    subtitle: '晓山瑞希 - シークレット・ディスタンス（4星) ',
+    prelink: 'https://www.bilibili.com/video/BV1b5411c7LU',
+    postlink: 'https://www.bilibili.com/video/BV1b5411c7LU',
+  },
+  {
     id: 'ena4003',
     path: 'ena/4003.png',
     title: 'ミステリーツアーの洗礼？',
