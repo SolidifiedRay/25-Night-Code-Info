@@ -1,6 +1,22 @@
 export const cardData = [
   {
     id: 'mzk4002',
+    path: 'mzk/4003.png',
+    title: '想いと現実の狭間で',
+    subtitle: '晓山瑞希 - お悩み聞かせて！わくわくピクニック（4星) ',
+    prelink: 'https://www.bilibili.com/video/BV1V54y1L7GB',
+    postlink: 'https://www.bilibili.com/video/BV1V54y1L7GB',
+  },
+  {
+    id: 'ena4003',
+    path: 'ena/4004.png',
+    title: '差しのべられた手',
+    subtitle: '东云绘名 - お悩み聞かせて！わくわくピクニック（4星) ',
+    prelink: 'https://www.bilibili.com/video/BV1HA411G7hL',
+    postlink: 'https://www.bilibili.com/video/BV1HA411G7hL',
+  },
+  {
+    id: 'mzk4002',
     path: 'mzk/4002.png',
     title: '気づいてしまった想い',
     subtitle: '晓山瑞希 - シークレット・ディスタンス（4星) ',
