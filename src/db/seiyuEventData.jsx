@@ -1,5 +1,19 @@
 export const seiyuEventData = [
   {
+    id: 'seiyu005',
+    path: '20210628.png',
+    title: 'プロセカアフタートーク　カーネーション・リコレクション編 (熟肉）',
+    subtitle: '楠木灯',
+    link: 'https://www.bilibili.com/video/BV1qL411p7mK',
+  },
+  {
+    id: 'seiyu004',
+    path: '20210613.png',
+    title: 'プロセカイベントストーリーシアター 25時、ナイトコードで。編',
+    subtitle: '铃木实里',
+    link: 'https://www.bilibili.com/video/BV1YK4y1375i',
+  },
+  {
     id: 'seiyu003',
     path: '20210419.png',
     title: 'プロセカアフタートーク　シークレット・ディスタンス編',

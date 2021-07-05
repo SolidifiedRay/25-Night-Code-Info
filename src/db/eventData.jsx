@@ -1,5 +1,13 @@
 export const eventData = [
   {
+    id: '20210621',
+    path: '20210621.png',
+    title: 'カーネーション・リコレクション ',
+    subtitle: '团活',
+    time: '2021/6/21 ~ 2021/6/28',
+    link: 'https://www.bilibili.com/video/BV1J5411T7Tk',
+  },
+  {
     id: '20210510',
     path: '20210510.png',
     title: 'お悩み聞かせて！わくわくピクニック',

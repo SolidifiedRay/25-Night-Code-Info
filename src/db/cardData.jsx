@@ -1,6 +1,38 @@
 export const cardData = [
   {
-    id: 'mzk4002',
+    id: 'knd4004',
+    path: 'knd/4004.png',
+    title: '思い出の花壇',
+    subtitle: '宵崎奏 - カーネーション・リコレクション（4星) ',
+    prelink: 'https://www.bilibili.com/video/BV1Xf4y1t77Q',
+    postlink: 'https://www.bilibili.com/video/BV1Xf4y1t77Q',
+  },
+  {
+    id: 'mfy4004',
+    path: 'mfy/4004.png',
+    title: 'こぼれたほほ笑み',
+    subtitle: '朝比奈真冬 - カーネーション・リコレクション（4星) ',
+    prelink: 'https://www.bilibili.com/video/BV1cy4y1M7Uj',
+    postlink: 'https://www.bilibili.com/video/BV1cy4y1M7Uj',
+  },
+  {
+    id: 'mzk3003',
+    path: 'mzk/3003.png',
+    title: '迷える手を引いて',
+    subtitle: '晓山瑞希 - カーネーション・リコレクション（3星) ',
+    prelink: 'https://www.bilibili.com/video/BV1764y197Cn',
+    postlink: 'https://www.bilibili.com/video/BV1764y197Cn',
+  },
+  {
+    id: 'ena2003',
+    path: 'ena/2003.png',
+    title: '言葉にしてほしくて',
+    subtitle: '东云绘名 - カーネーション・リコレクション（2星) ',
+    prelink: 'https://www.bilibili.com/video/BV13V411x7n8',
+    postlink: 'https://www.bilibili.com/video/BV13V411x7n8',
+  },
+  {
+    id: 'mzk4003',
     path: 'mzk/4003.png',
     title: '想いと現実の狭間で',
     subtitle: '晓山瑞希 - お悩み聞かせて！わくわくピクニック（4星) ',
@@ -8,7 +40,7 @@ export const cardData = [
     postlink: 'https://www.bilibili.com/video/BV1V54y1L7GB',
   },
   {
-    id: 'ena4003',
+    id: 'ena4004',
     path: 'ena/4004.png',
     title: '差しのべられた手',
     subtitle: '东云绘名 - お悩み聞かせて！わくわくピクニック（4星) ',

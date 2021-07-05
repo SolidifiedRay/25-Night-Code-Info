@@ -1,6 +1,20 @@
 export const radioData = [
   {
     id: 'radio015',
+    path: '017.png',
+    title: '「25时，于夜之电台。」#17 ',
+    subtitle: '田边留依 x 佐藤日向',
+    link: 'https://www.bilibili.com/video/BV1YX4y1A7GU',
+  },
+  {
+    id: 'radio015',
+    path: '016.png',
+    title: '「25时，于夜之电台。」#16 ',
+    subtitle: '田边留依 x 铃木实里',
+    link: 'https://www.bilibili.com/video/BV1qV411x7Mo',
+  },
+  {
+    id: 'radio015',
     path: '015.png',
     title: '「25时，于夜之电台。」#15 ',
     subtitle: '田边留依 x 铃木实里',
