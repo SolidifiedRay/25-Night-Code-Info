@@ -1,5 +1,13 @@
 export const eventData = [
   {
+    id: '20210720',
+    path: '20210720.png',
+    title: '夏祭り、鳴り響く音は',
+    subtitle: '混活： 全员',
+    time: '2021/7/20 ~ 2021/7/29',
+    link: 'https://www.bilibili.com/video/BV1rq4y1H7vu',
+  },
+  {
     id: '20210621',
     path: '20210621.png',
     title: 'カーネーション・リコレクション ',
@@ -11,7 +19,7 @@ export const eventData = [
     id: '20210510',
     path: '20210510.png',
     title: 'お悩み聞かせて！わくわくピクニック',
-    subtitle: '混活： 东云绘名，晓山瑞希',
+    subtitle: '混活：东云绘名，晓山瑞希',
     time: '2021/5/10 ~ 2021/5/19',
     link: 'https://www.bilibili.com/video/BV1pU4y1t7xz',
   },

@@ -1,5 +1,21 @@
 export const cardData = [
   {
+    id: 'ena4005',
+    path: 'ena/4005.png',
+    title: 'いつかの夏祭り ',
+    subtitle: '东云绘名 - 夏祭り、鳴り響く音は（4星) ',
+    prelink: 'https://www.bilibili.com/video/BV16v411n7nu',
+    postlink: 'https://www.bilibili.com/video/BV16v411n7nu',
+  },
+  {
+    id: 'mzk2003',
+    path: 'mzk/2003.png',
+    title: 'サマーナイトフェスティバル',
+    subtitle: '晓山瑞希 - 夏祭り、鳴り響く音は（2星) ',
+    prelink: 'https://www.bilibili.com/video/BV1J64y167ii',
+    postlink: 'https://www.bilibili.com/video/BV1J64y167ii',
+  },
+  {
     id: 'knd4004',
     path: 'knd/4004.png',
     title: '思い出の花壇',
