@@ -1,5 +1,29 @@
 export const eventData = [
   {
+    id: '20211001',
+    path: '20211001.png',
+    title: 'スクランブル・ファンフェスタ！',
+    subtitle: '混活： 全员',
+    time: '2021/10/1 ~ 2021/10/9',
+    link: 'https://www.bilibili.com/video/BV1JL4y1z7t2',
+  },
+  {
+    id: '20210921',
+    path: '20210921.png',
+    title: '灯のミラージュ',
+    subtitle: '团活',
+    time: '2021/9/21 ~ 2021/9/29',
+    link: 'https://www.bilibili.com/video/BV1gq4y1P7f7',
+  },
+  {
+    id: '20210831',
+    path: '20210831.png',
+    title: 'ふたり、月うさぎ',
+    subtitle: '混活： 朝比奈真冬',
+    time: '2021/8/31 ~ 2021/9/8',
+    link: 'https://www.bilibili.com/video/BV1Lf4y1A7my',
+  },
+  {
     id: '20210720',
     path: '20210720.png',
     title: '夏祭り、鳴り響く音は',
